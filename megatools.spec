@@ -11,6 +11,7 @@ BuildRequires:  fuse-devel
 BuildRequires:  libcurl-devel
 BuildRequires:  openssl-devel
 BuildRequires:  glib2-devel
+BuildRequires:  gobject-introspection-devel
 
 
 %description
