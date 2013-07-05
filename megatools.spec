@@ -10,6 +10,7 @@ Source0:        http://megatools.megous.com/builds/%{name}-%{version}.tar.gz
 BuildRequires:  fuse-devel
 BuildRequires:  libcurl-devel
 BuildRequires:  openssl-devel
+BuildRequires:  glib2-devel
 
 
 %description
