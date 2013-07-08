@@ -1,6 +1,6 @@
 Name:           megatools
 Version:        1.9.91
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Command line client for Mega.co.nz
 
 License:        GPLv2+
@@ -11,7 +11,6 @@ BuildRequires:  fuse-devel
 BuildRequires:  libcurl-devel
 BuildRequires:  openssl-devel
 BuildRequires:  glib2-devel
-BuildRequires:  gobject-introspection-devel
 
 
 %description
@@ -61,7 +60,6 @@ rm %{buildroot}%{_docdir}/%{name}/INSTALL
 %{_bindir}/*
 %{_libdir}/libmega.so.*
 %{_docdir}/%{name}
-%{_datadir}/gir-1.0/Mega-1.0.gir
 %{_datadir}/gjs-1.0/mega.js
 %{_mandir}/man1/*
 %{_mandir}/man5/megarc.5.gz
@@ -71,9 +69,11 @@ rm %{buildroot}%{_docdir}/%{name}/INSTALL
 %{_includedir}/mega
 %{_libdir}/libmega.so
 %{_libdir}/pkgconfig/libmega.pc
-%{_libdir}/girepository-1.0/Mega-1.0.typelib
 
 
 %changelog
+* Mon Jul 08 2013 Vasiliy N. Glazov <vascom2@gmail.com> 1.9.91-2.R
+- Remove BR gobject-introspection-devel
+
 * Tue Jun 04 2013 Vasiliy N. Glazov <vascom2@gmail.com> 1.9.91-1.R
 - Initial release
